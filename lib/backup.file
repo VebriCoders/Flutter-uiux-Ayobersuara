@@ -1,0 +1,174 @@
+Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    SizedBox(
+                      height: 50,
+                    ),
+                    Text(
+                      "Daftar Pemilih,",
+                      style:
+                          TextStyle(fontSize: 26, fontWeight: FontWeight.bold),
+                    ),
+                    SizedBox(
+                      height: 6,
+                    ),
+                    Text(
+                      "Daftar Dan Salurkan Suara Anda!",
+                      style:
+                          TextStyle(fontSize: 20, color: Colors.grey.shade400),
+                    ),
+                  ],
+                ),
+                Column(
+                  children: <Widget>[
+                    TextField(
+                      decoration: InputDecoration(
+                        labelText: "Nomor Pemilihan (NIK)",
+                        labelStyle: TextStyle(
+                            fontSize: 14,
+                            color: Colors.grey.shade400,
+                            fontWeight: FontWeight.w600),
+                        enabledBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(10),
+                          borderSide: BorderSide(color: Colors.grey.shade300),
+                        ),
+                        focusedBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(10),
+                          borderSide: BorderSide(color: Colors.blue),
+                        ),
+                        floatingLabelBehavior: FloatingLabelBehavior.auto,
+                      ),
+                      keyboardType: TextInputType.number,
+                    ),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    TextField(
+                      decoration: InputDecoration(
+                        labelText: "Nama Lengkap",
+                        labelStyle: TextStyle(
+                            fontSize: 14,
+                            color: Colors.grey.shade400,
+                            fontWeight: FontWeight.w600),
+                        enabledBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(10),
+                          borderSide: BorderSide(color: Colors.grey.shade300),
+                        ),
+                        focusedBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(10),
+                          borderSide: BorderSide(color: Colors.blue),
+                        ),
+                        floatingLabelBehavior: FloatingLabelBehavior.auto,
+                      ),
+                    ),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    TextField(
+                      obscureText: true,
+                      decoration: InputDecoration(
+                        labelText: "Email Aktif",
+                        labelStyle: TextStyle(
+                            fontSize: 14,
+                            color: Colors.grey.shade400,
+                            fontWeight: FontWeight.w600),
+                        enabledBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(10),
+                          borderSide: BorderSide(color: Colors.grey.shade300),
+                        ),
+                        focusedBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(10),
+                          borderSide: BorderSide(color: Colors.blue),
+                        ),
+                        floatingLabelBehavior: FloatingLabelBehavior.auto,
+                      ),
+                    ),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    TextField(
+                      obscureText: true,
+                      decoration: InputDecoration(
+                        labelText: "Nomor Telp Aktif",
+                        labelStyle: TextStyle(
+                            fontSize: 14,
+                            color: Colors.grey.shade400,
+                            fontWeight: FontWeight.w600),
+                        enabledBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(10),
+                          borderSide: BorderSide(color: Colors.grey.shade300),
+                        ),
+                        focusedBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(10),
+                          borderSide: BorderSide(color: Colors.blue),
+                        ),
+                        floatingLabelBehavior: FloatingLabelBehavior.auto,
+                      ),
+                    ),
+                    SizedBox(
+                      height: 30,
+                    ),
+                    Container(
+                      height: 50,
+                      child: FlatButton(
+                        onPressed: () {},
+                        padding: EdgeInsets.all(0),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(6),
+                        ),
+                        child: Ink(
+                          decoration: BoxDecoration(
+                            gradient: LinearGradient(
+                              begin: Alignment.centerLeft,
+                              end: Alignment.centerRight,
+                              colors: [
+                                Colors.indigo,
+                                Colors.blue,
+                                Colors.lightBlue,
+                              ],
+                            ),
+                            borderRadius: BorderRadius.circular(6),
+                          ),
+                          child: Container(
+                            alignment: Alignment.center,
+                            constraints: BoxConstraints(
+                                minHeight: 50, maxWidth: double.infinity),
+                            child: Text(
+                              "Register",
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white),
+                              textAlign: TextAlign.center,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 30,
+                    ),
+                  ],
+                ),
+                 Padding(
+                  padding: const EdgeInsets.only(bottom: 10),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Text(
+                        "Saya Sudah Pernah Daftar ",
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.pop(context);
+                        },
+                        child: Text(
+                          "Login",
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold, color: Colors.blue),
+                        ),
+                      )
+                    ],
+                  ),
+                ),
+    
